@@ -1,0 +1,169 @@
+
+@font-face {
+    font-family: "terminus";
+    src: url("../fonts/TerminusTTF-4.47.0.ttf");
+}
+
+
+* { box-sizing: border-box; }
+
+#mobileUi{
+    width: 100%;
+    height: 100%;
+    z-index: 1000000;
+    visibility: hidden;
+}
+#mobileUi div {
+    float: right;
+    bottom: 10%;
+    right: 10%;
+    position: absolute;
+    z-index: 9999;
+    width: 20%;
+    height: 30%;
+}
+#btnUp{
+    margin: auto;
+    width: 100%;
+    float: left;
+    height: 40%;
+    color: red;
+    background-color: black;
+    border: 2px solid red;
+}
+#btnLeft{
+    margin: auto;
+    width: 33.3%;
+    float: left;
+    height: 60%;
+    color: red;
+    background-color: black;
+    border: 2px solid red;
+}
+#btnDown{
+    margin: auto;
+    width: 33.3%;
+    float: left;
+    height: 60%;
+    color: red;
+    background-color: black;
+    border: 2px solid red;
+
+}
+
+#btnRight{
+    margin: auto;
+    width: 33.3%;
+    float: left;
+    height: 60%;
+    color: red;
+    background-color: black;
+    border: 2px solid red;
+
+}
+
+#player {
+    width: 20px;
+    height:20px;
+    background-color:black;
+    position: absolute;
+    color:yellow;
+    content: '@';
+    text-align: center;
+}
+
+.enemy {
+    width: 20px;
+    height:20px;
+    background-color:red;
+    position: absolute;
+    color:white;
+    content: '>';
+    text-align: center;
+}
+.healthPotion {
+    width: 20px;
+    height:20px;
+    background-color:black;
+    position: absolute;
+    color:red;
+    content: '+';
+    text-align: center;
+}
+
+.emptyCell {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    background-color: grey;
+    text-align: center;
+    position: absolute;
+}
+.wall {
+    background-color: black;
+    width: 20px;
+    height: 20px;
+    color: white;
+    text-align: center;
+    position: absolute;
+}
+
+#gameWindow{
+    background-color: black;
+}
+body{
+    width: 100%;
+    height: 100%;
+    margin:auto;
+    font-family: "terminus";
+    font-size: 14pt;
+    background-color: black;
+position: absolute;
+}
+h1,h2,h3 {
+    color: white;
+}
+h2 {
+    font-size: 16pt;
+}
+.msg {
+    padding: 2%;
+    z-index:9999;
+    color: red;
+    float: right;
+    top: 0px;
+    position: absolute;
+    right: 0px;
+}
+
+
+#txtOut {
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    bottom: 0px;
+    color: white;
+    max-height:300px;
+    overflow: hidden;
+    background-color: black;
+}
+@media screen and (max-width: 1135px) {
+
+#mobileUi{
+    width: 100%;
+    height: 100%;
+    z-index: 1000000;
+    visibility: visible;
+}
+
+
+}
+@media screen and (max-width: 700px)  {
+.msg,#txtOut{
+    visibility: hidden;
+}
+#mobileUi div{
+   width: 46%;
+}
+
+}
