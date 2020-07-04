@@ -4,26 +4,61 @@
         <title>rogueJs</title>
         <meta charset="utf-8">
         <meta name="author" content="Daniel Bastos">
-        <meta name="keywords" content="">
-        <meta name="description" content="Roguelike is pure javascript">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">        
+        <meta name="keywords" content="roguelike, javascript">
+        <meta name="description" content="Roguelike in pure javascript">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css">
     </head>
-
     <body>
-        
+        <section id="settings">
+            ?
+            <div class="tooltip" id="tooltip1">
+                SETTINGS
+            </div>
+        </section>
+        <section id="inventory">
+            #
+            <div class="tooltip" id="tooltip2">
+                INVENTORY
+            </div>
+        </section>
+        <section id="overlayinventory">
+            <ul id="innerInventory"></ul>
+        </section>
+        <section id="overlay">
+            <p>Sound: <input type="checkbox" id="checkboxSound">    </p>
+            <p>Roguelike in pure javascript</p>
+            <p>Github: http://link</p>
+            <p>Movement keys:</p>
+            <p> z - q - s - d </p>
+            <p>Or arrows</p>
+        </section>
+        <section id="startScreen">
+            <section id="logo">@</section>
+            <p>rogueJs</p>
+            <p id="btnStartScreen">Play</p>
+        </section>
+        <aside id="mobileUi">
+            <div>
+                <button id="btnUp" class="button--action">^</button>
+                <button id="btnLeft" class="button--action">&lt;</button>
+                <button id="btnDown" class="button--action">v</button>
+                <button id="btnRight" class="button--action">&gt;</button>
+            </div>
+        </aside>
+        <aside class="mobileMsg">
+        </aside>
         <aside class="msg">
-           <h1>rogueJs</h1>
-           <p>Movement keys:</p><p> z - q - s - d </p>
-           <h2>Player:</h2>
-           <p>Health: <span id="healthHtml">100</span></p>
+            <h1>rogueJs</h1>
+            <h2>Player:</h2>
+            <p>Health: <span id="healthHtml">100</span></p>
+            <p>Level: <span id="lvlHtml">1</span></p>
+            <p>High Score: <span id="highScoreHtml"></span></p>
+            <p>Equiped: <span id="equipedHtml"></span></p>
         </aside>
         <div id="txtOut"></div>
         <div id="gameWindow">
-
-
-       </div>
-       <script type="text/javascript" src="js/game.js"></script>
- 
+        </div>
+        <script type="text/javascript" src="js/game.js"></script>
     </body>
 </html>
